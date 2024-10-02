@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection'; // Add this
+import HeroSection from './components/HeroSection';
 import HomePage from './components/HomePage';
 import AboutUs from './components/AboutUs';
 import WhatWeDo from './components/WhatWeDo';
@@ -9,13 +9,14 @@ import Leadership from './components/Leadership';
 import Donation from './components/Donation';
 import EventManagement from './components/EventManagement';
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer'; // Add the Footer component
 import './index.css';
 
 const App: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <HeroSection /> {/* Include the HeroSection */}
+      <HeroSection />
       <HomePage />
       <AboutUs />
       <WhatWeDo />
@@ -24,6 +25,7 @@ const App: React.FC = () => {
       <Donation />
       <EventManagement />
       <ContactUs />
+      <Footer /> {/* Include the Footer at the bottom */}
     </div>
   );
 };
