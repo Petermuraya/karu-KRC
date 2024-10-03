@@ -1,32 +1,32 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import HomePage from './components/HomePage';
-import AboutUs from './components/AboutUs';
-import WhatWeDo from './components/WhatWeDo';
-import EventsActivities from './components/EventsActivities';
-import Leadership from './components/Leadership';
-import Donation from './components/Donation';
-import EventManagement from './components/EventManagement';
-import ContactUs from './components/ContactUs';
-import Footer from './components/Footer'; // Add the Footer component
-import './index.css';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import WhatWeDo from './pages/WhatWeDo';
+import ContactUs from './pages/ContactUs';
+import Donation from './pages/Donation';
+import Register from './pages/Register';
+import Login from './pages/Login';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Navbar />
-      <HeroSection />
-      <HomePage />
-      <AboutUs />
-      <WhatWeDo />
-      <EventsActivities />
-      <Leadership />
-      <Donation />
-      <EventManagement />
-      <ContactUs />
-      <Footer /> {/* Include the Footer at the bottom */}
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/what-we-do" element={<WhatWeDo />} />
+          <Route path="/donation" element={<Donation />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<ContactUs />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
