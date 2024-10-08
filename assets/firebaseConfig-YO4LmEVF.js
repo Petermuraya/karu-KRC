@@ -1,1 +1,0 @@
-import{i as a,g as e}from"./index-68602d24-Cqehjd0e.js";const o={apiKey:"AIzaSyC4CZJRXgvKdg3e0m4QOVx54YtjmxOTva0",authDomain:"karatina-redcroos.firebaseapp.com",projectId:"karatina-redcroos",storageBucket:"karatina-redcroos.appspot.com",messagingSenderId:"770106012239",appId:"1:770106012239:web:d44f1064016fc3ff85303a"},t=a(o),s=e(t);export{s as a,t as b};
